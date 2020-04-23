@@ -19,9 +19,7 @@ class CustomViewController: ViewController {
     
     @objc func goToEntrance() {
         print("Pressed")
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "Main") as! ViewController
-                self.present(viewController, animated: false, completion: nil)
+        navigationController?.popToRootViewController(animated: true)
     }
     
 }
