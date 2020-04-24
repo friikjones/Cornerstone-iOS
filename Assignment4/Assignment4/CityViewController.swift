@@ -33,7 +33,12 @@ class CityViewController: UIViewController {
   
   @objc func showWeatherDetails() {
         let weatherDetails = DetailsViewController()
+        weatherDetails.city = city
         print("button pressed")
-  }
+        
+    
+    
+    
+    }
 }
 

@@ -15,6 +15,7 @@ class DetailsViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        navigationItem.title = "Details"+city.name
         
         let countryTitle = UILabel(frame: CGRect(x: view.bounds.width / 2 - 150, y: view.bounds.height / 2 - 300, width: 300, height: 20))
         countryTitle.text = "Country"
@@ -65,6 +66,7 @@ class DetailsViewController : UIViewController {
         view.addSubview(tempLabel)
         view.addSubview(sumTitle)
         view.addSubview(sumLabel)
+        
         
         
     }
