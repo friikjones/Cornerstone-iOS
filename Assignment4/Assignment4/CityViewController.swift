@@ -36,7 +36,7 @@ class CityViewController: UIViewController {
         weatherDetails.city = city
         print("button pressed")
         
-    
+    self.navigationController?.pushViewController(weatherDetails, animated: true)
     
     
     }
